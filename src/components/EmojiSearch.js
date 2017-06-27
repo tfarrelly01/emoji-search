@@ -4,9 +4,13 @@ class EmojiSearch extends React.Component {
     render() {
         return (
             <div>
-            <h2>searching</h2>
+            <h2>Emoji Search Form</h2>
+                <input type="text" onChange ={this.handleChange}/>
             </div>
         );
+    }
+    handleChange(event) {
+        console.dir(event.target);
     }
 }
 

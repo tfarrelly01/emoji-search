@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import emojiData from './emojiList.json';
 
-import EmojiSeachApp from './components/EmojiSearchApp.js';
+import EmojiSearchApp from './components/EmojiSearchApp.js';
 
-ReactDOM.render(<EmojiSeachApp/>, 
+ReactDOM.render(<EmojiSearchApp emojis={emojiData} />, 
 document.getElementById('root'));

@@ -1,13 +1,17 @@
 import React from 'react';
 
-import Emojis from './Emojis';
+import Emoji from './Emoji';
 
 class EmojiList extends React.Component {
     render() {
         return (
             <div>
-                <h2>lists emojis</h2>
-                <Emojis data={this.props.data}/>
+                <h2>Lists emojis</h2>
+                {this.props.emojis.map(function (emoji) {
+                    return (
+                        <Emoji symbol={emoji.symbol} title={emoji.title} />
+                    );
+                })}
             </div>
         );
     }
