@@ -7,7 +7,7 @@ class EmojiList extends React.Component {
         return (
             <div>
                 <h2>lists emojis</h2>
-                <Emojis/>
+                <Emojis data={this.props.data}/>
             </div>
         );
     }

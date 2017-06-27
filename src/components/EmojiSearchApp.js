@@ -2,6 +2,7 @@ import React from 'react';
 
 import EmojiList from './EmojiList';
 import EmojiSearch from './EmojiSearch';
+import emojiData from '../emojiList.json';
 
 
 class EmojiSearchApp extends React.Component {
@@ -10,7 +11,7 @@ class EmojiSearchApp extends React.Component {
             <div>
         <h1>Emoji Search App</h1>
             <EmojiSearch/>
-            <EmojiList/>
+            <EmojiList data={emojiData}/>
             </div>
         );
     }
