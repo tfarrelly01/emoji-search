@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const MyFirstComponent = React.createElement(
-  'h1', 
-  { style: { color: 'cornflowerblue' } }, 
-  'Welcome to React!'
-);
+import EmojiSeachApp from './components/EmojiSearchApp.js';
 
-ReactDOM.render(Hello, document.getElementById('root'));
+ReactDOM.render(<EmojiSeachApp/>, 
+document.getElementById('root'));
