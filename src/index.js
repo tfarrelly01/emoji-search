@@ -4,5 +4,5 @@ import emojiData from './emojiList.json';
 
 import EmojiSearchApp from './components/EmojiSearchApp.js';
 
-ReactDOM.render(<EmojiSearchApp emojis={emojiData} />, 
+ReactDOM.render(<EmojiSearchApp emojis={emojiData}/>, 
 document.getElementById('root'));

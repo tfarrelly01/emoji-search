@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Emoji from './Emoji';
 
 class EmojiList extends React.Component {
@@ -12,6 +11,8 @@ class EmojiList extends React.Component {
                         <Emoji symbol={emoji.symbol} title={emoji.title} />
                     );
                 })}
+
+
             </div>
         );
     }
